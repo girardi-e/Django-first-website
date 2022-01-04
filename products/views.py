@@ -5,4 +5,9 @@ from django.http import HttpResponse
 # URL (Uniform Resource Locator -> Address)
 # /products -> index
 def index(request):
-    return HttpResponse("Welcome to PyShop! Feel free to browse our products")
+    return HttpResponse("Welcome to PyShop!")
+
+
+# /products/new
+def new(request):
+    return HttpResponse("Create new product")
