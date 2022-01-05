@@ -10,4 +10,4 @@ def index(request):
 
 # /products/new
 def new(request):
-    return HttpResponse("Create new product")
+    return HttpResponse("New products")
