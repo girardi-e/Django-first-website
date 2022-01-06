@@ -1,11 +1,13 @@
 from django.http import HttpResponse
-# from django.shortcuts import render
+from .models import Product
+from django.shortcuts import render
 
 
 # URL (Uniform Resource Locator -> Address)
 # /products -> index
 def index(request):
-    return HttpResponse("Welcome to PyShop!")
+    products = Product.objects.all()
+    return render(request, "index.html")
 
 
 # /products/new
